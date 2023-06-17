@@ -89,3 +89,15 @@ LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_I
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+
+
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 10800))
+DOWNLOAD_TEXT_URL = "https://t.me/tnlinkdown/6"
+CAPTION_BUTTON_URL = "https://t.me/RolexMoviesOXO"
+WEBHOOK = bool(environ.get("WEBHOOK", True))
+BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
+RemoveBG_API = environ.get("RemoveBG_API", "eQ9W36MSu3pmQJLVPZHmF47F")
+PM_IMDB = environ.get('PM_IMDB', "True")
+REQ_SUB = bool(environ.get("REQ_SUB", True))
+PMFILTER = environ.get('PMFILTER', "True")
+FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
