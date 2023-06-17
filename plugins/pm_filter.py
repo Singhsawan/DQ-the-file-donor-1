@@ -1605,7 +1605,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "earn":
         buttons = [[
-            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ 🔻', url='https://t.me/Request_Corner1')
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ 🔻', callback_data='connectto')
         ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
