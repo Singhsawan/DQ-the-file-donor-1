@@ -1,23 +1,18 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
+    START_TXT = """<b> Hᴇʟʟᴏ {}</b> 😁
+    
+ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ + ᴍᴏᴠɪᴇ sᴇᴀʀᴄʜ + ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ ʙᴏᴛ. ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs. ʏᴏᴜ ᴄᴀɴ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇs ᴠɪᴀ ɪɴʟɪɴᴇ. ɪ ᴄᴀɴ ᴀʟsᴏ ᴀᴅᴅ ꜰɪʟᴛᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs. ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ😌"""
+    HELP_TXT = """𝙷𝙴𝚈 {}
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
 
-    HELP_TXT = """<b>Hᴇʏ {}
-Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
+    ABOUT_TXT = """<b><i>👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/JonSnow11><b>ᴊᴏɴ sɴᴏᴡ</b></a>\n
+📝 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org><b>ᴘʏᴛʜᴏɴ</b></a>\n
+📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : <a href=https://github.com/pyrogram/pyrogram><b>ᴘʏʀᴏɢʀᴀᴍ</b></a>\n
+📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href=heroku.com><b>ʜᴇʀᴏᴋᴜ</b></a>\n
+👥 sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/RolexMoviesOX><b>ʀᴏʟᴇx ᴄᴏᴍᴍᴜɴɪᴛʏ</b></a>\n
+"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/creatorbeatz'>Jᴏᴇʟ Kᴜʀɪᴀɴ Bɪᴊᴜ</a>
-✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
-✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://app.koyeb.com/'>Kᴏʏᴇʙ</a>
-✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [ Sᴛᴀʙʟᴇ ]</b>"""
-
-    SOURCE_TXT = """<b>ɴᴏᴛᴇ:
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-- ꜱᴏᴜʀᴄᴇ - <a href="https://github.com/Joelkb/DQ-The-File-Donor">ʜᴇʀᴇ</a>
-Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/creatorbeatz">Jᴏᴇʟ ᠰ TɢX</a></b>"""
+    SOURCE_TXT = """<b>Hᴇʀᴇ ɪs ᴛʜᴇ Exᴛʀᴀ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 🥂</b>"""
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -38,7 +33,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/DQ_The_File_Donor_Updates)</code>
+<code>[Button Text](buttonurl:https://t.me/MrperfectOffcial)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
@@ -64,6 +59,25 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /disconnect  - <code>ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ</code>
 • /connections - <code>ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</code>"""
 
+    EARN_TXT = """𝟭. 𝗠𝗔𝗞𝗘 𝗦𝗨𝗥𝗘 𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 𝗛𝗔𝗦 𝟭𝟬𝟬+ 𝗠𝗘𝗠𝗕𝗘𝗥𝗦 !!!
+
+𝟮. 𝗔𝗗𝗗 𝗕𝗢𝗧 𝗧𝗼 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 𝗪𝗜𝗧𝗛 𝗙𝗨𝗟𝗟 𝗔𝗗𝗠𝗜𝗡 𝗥𝗜𝗚𝗛𝗧𝗦
+
+𝟯. 𝗔𝗙𝗧𝗘𝗥 𝗔𝗗𝗗𝗜𝗡𝗚 𝗜𝗡 𝗚𝗥𝗢𝗨𝗣, 𝗖𝗥𝗘𝗔𝗧𝗘 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗡 𝗔𝗡𝗬 𝗨𝗥𝗟 𝗦𝗛𝗢𝗥𝗧𝗡𝗘𝗥 𝗪𝗘𝗕𝗦𝗜𝗧𝗘
+
+𝗠𝗬 𝗦𝗨𝗚𝗚𝗘𝗦𝗧𝗜𝗢𝗡(𝗖𝗣𝗠 𝟳+) : <a href='https://tnshort.net/ref/Bharathraj'>𝗧𝗡𝗦𝗛𝗢𝗥𝗧.𝗡𝗘𝗧</a>
+
+𝟰. 𝗔𝗙𝗧𝗘𝗥 𝗠𝗔𝗞𝗜𝗡𝗚 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗡 𝗦𝗛𝗢𝗥𝗧𝗡𝗘𝗥 𝗪𝗘𝗕𝗦𝗜𝗧𝗘 𝗦𝗘𝗡𝗗 𝗧𝗛𝗜𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗜𝗡 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
+
+
+—> /𝗦𝗛𝗢𝗥𝗧𝗟𝗜𝗡𝗞 𝗬𝗢𝗨𝗥_𝗦𝗛𝗢𝗥𝗧𝗘𝗡𝗘𝗥_𝗪𝗘𝗕𝗦𝗜𝗧𝗘_𝗡𝗔𝗠𝗘 (𝗬𝗢𝗨𝗥_𝗦𝗛𝗢𝗥𝗧𝗡𝗘𝗥_𝗔𝗣𝗜)
+
+#𝗘𝗫𝗔𝗠𝗣𝗟𝗘:-
+
+/𝗦𝗛𝗢𝗥𝗧𝗟𝗜𝗡𝗞 𝗧𝗡𝗦𝗛𝗢𝗥𝗧.𝗡𝗘𝗧 𝗕𝟲𝗔𝗔𝗖𝗘𝟰𝟲𝗗𝟰𝟬𝗖𝟲𝟬𝟱𝗙𝗙𝗙𝟴𝗘𝗢𝗖𝗔𝗙𝗕𝗖𝗗𝟴𝗙𝗕𝗘𝟰𝟭𝟲𝟴𝟱𝟭𝗙𝟰𝗗
+
+𝟱. 𝗔𝗗𝗗 𝗠𝗢𝗥𝗘 𝗠𝗘𝗠𝗕𝗘𝗥𝗦 𝗧𝗼 𝗘𝗔𝗥𝗡 𝗠𝗢𝗡𝗘𝗬"""
+    
     EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
@@ -148,9 +162,9 @@ Nᴀᴍᴇ - {}"""
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴊᴏᴇʟ ᴋᴜʀɪᴀɴ ʙɪᴊᴜ
-• ᴜꜱᴇʀɴᴀᴍᴇ : @creatorbeatz
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/creatorbeatz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴊᴏɴ sɴᴏᴡ
+• ᴜꜱᴇʀɴᴀᴍᴇ : JonSnow11
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/JonSnow11'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
@@ -182,35 +196,16 @@ Nᴀᴍᴇ - {}"""
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)"""
 
     NORSLTS = """
-★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
+★ #Aᴜᴛᴏ_Rᴇǫᴜᴇsᴛ ★
 
-𝗜𝗗 <b>: {}</b>
-
-𝗡𝗮𝗺𝗲 <b>: {}</b>
-
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
+♦️ <b>Usᴇʀ_ID</b> : `{}`
+♦️ <b>Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {}</b>
+🔆 <b>Rᴇǫᴜᴇsᴛ</b> : 🎗️`{}`🎗️ """
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+ɴᴀᴍᴇ : <code>{file_name}</code> \n\nɴᴏᴛᴇ: ᴀꜰᴛᴇʀ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇ ꜰɪʟᴇꜱ, ꜱᴀᴠᴇ ᴛʜᴇ ꜰɪʟᴇ ᴛᴏ ɢᴀʟʟᴇʀʏ ᴀɴᴅ ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴇʟᴇᴛᴇ ʙᴜᴛᴛᴏɴ, ᴅᴏɴ'ᴛ ᴄʟɪᴄᴋ ʙᴇꜰᴏʀᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇ ꜰɪʟᴇꜱ"""
 
-<b>
-╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
-╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Bot_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
-=========== • ✠ • ===========</b>"""
-
-    IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
-IMDb Data:
-
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+    IMDB_TEMPLATE_TXT = """<i>IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 </i>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
@@ -240,6 +235,60 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
+
+    TELE_TXT = """<b>»HELP: Tᴇʟᴇɢʀᴀᴘʜ▪️
+
+Dᴏ ᴀs ʏᴏᴜ ᴡɪsʜ ᴡɪᴛʜ ᴛᴇʟᴇɢʀᴀ.ᴘʜ ᴍᴏᴅᴜʟᴇ!
+
+USAGE:
+
+🤧 /ᴛᴇʟᴇɢʀᴀᴘʜ - Sᴇɴᴅ ᴍᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ʀᴇᴘʟʏ ᴡɪᴛʜ Pɪᴄᴛᴜʀᴇ ᴏʀ Vɪᴅᴇ Uɴᴅᴇʀ (𝟻MB) 
+
+NOTE:
+
+• Tʜɪs Cᴏᴍᴍᴀɴᴅ Is Aᴠᴀɪʟᴀʙʟᴇ ɪɴ ɢᴏᴜᴘs ᴀɴᴅ ᴘᴍs
+• Tʜɪs Cᴏᴍᴍᴀɴᴅ Cᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ</b>"""
+    
+    YTDL_TXT = """<b>»YOUTUBE DOWNLOAD MODULE</b>
+
+🍁Usᴀɢᴇ : Yᴏᴜ Cᴀɴ Dᴏᴡɴʟᴏᴀᴅ Aɴʏ Vɪᴅᴇᴏ Oʀ Aᴜᴅɪᴏ Fʀᴏᴍ Yᴏᴜᴛᴜʙᴇ
+
+» Hᴏᴡ Tᴏ Usᴇ
+• Isᴏɴɢ SONG NAME
+• /ᴠɪᴅᴇᴏ ᴏʀ /ᴍᴘ𝟺 Aɴᴅ ʜᴛᴛᴘs://ʏᴏᴜᴛᴜ.ʙᴇ/*****
+
+• Exᴀᴍᴘʟᴇ:
+
+<ᴄᴏᴅᴇ>/sᴏɴɢ RXM</ᴄᴏᴅᴇ>
+<ᴄᴏᴅᴇ>/ᴍᴘ𝟺 ʜᴛᴛᴘs://ʏᴏᴜᴛᴜ.ʙᴇ/*******</ᴄᴏᴅᴇ>
+<ᴄᴏᴅᴇ>/ᴠɪᴅᴇᴏ ʜᴛᴛᴘs://ʏᴏᴜᴛᴜ.ʙᴇ/*****</ᴄᴏᴅᴇ>"""
+    
+    FOND_TXT = """<b>« HELP FOR FONTS »
+FONT IS A MODULE FOR MAKE YOUR TEXT STYLISH.
+FOR USE THAT FEUTURE TYPE /ғᴏɴᴛ <ʏᴏᴜʀ ᴛᴇxᴛ> THEN YOUR TEXT IS READY.</b>"""
+    
+    TTS_TXT = """Hᴇʟᴘ: <b> TTS 🎤 ᴍᴏᴅᴜʟᴇ:</b>
+
+Tʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
+
+<b>Cᴏᴍᴍᴀɴᴅs ᴀɴᴅ Usᴀɢᴇ:</b>
+
+• /ᴛᴛs <ᴛᴇxᴛ> : ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
+
+<b>NOTE:</b>
+
+• IMDʙ sʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟʟᴀɢᴇ.
+• Tʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡᴏʀᴋs ᴏɴ ʙᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘ.
+• IMDʙ ᴄᴀɴ ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛs ᴛᴏ 𝟸𝟶𝟶+ ʟᴀɴɢᴜᴀɢᴇs."""
+    
+    
+    IMAGE_TXT = """➤ 𝐇𝐞𝐥𝐩: Iᴍᴀɢᴇ
+
+Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ᴇᴅɪᴛ ɪᴍᴀɢᴇ Vᴇʀʏ ᴇᴀsɪʟʏ
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+
+➪ Jᴜsᴛ Sᴇɴᴅ ᴍᴇ ᴀ ɪᴍᴀɢᴇ ᴛᴏ ᴇᴅɪᴛ ✨"""
 
     LOGO = """
 
