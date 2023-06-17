@@ -1544,7 +1544,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "source":
         buttons = [[                    
             InlineKeyboardButton('Tᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),        
-            InlineKeyboardButton('Tᴇxᴛ 𝟸 Sᴘᴇᴇᴄʜ', callback_data='ttss'),           
+            InlineKeyboardButton('TTS', callback_data='ttss'),           
             InlineKeyboardButton("Iᴍᴀɢᴇ", callback_data='image')                                   
             ],[                               
             InlineKeyboardButton('Cᴀʀʙᴏɴ', callback_data='fond'),
@@ -1618,7 +1618,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "connectto":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
