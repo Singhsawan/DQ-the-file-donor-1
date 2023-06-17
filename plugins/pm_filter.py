@@ -1312,14 +1312,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('~🔻 Exᴛʀᴀ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 🔻~', callback_data='source')
-        ], [
-            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ 😎', url='https://t.me/JonSnow11'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 😊', callback_data='about')
-                  ]]
-        
+            InlineKeyboardButton('〆 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 〆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ​', callback_data='owner_info'),
+            InlineKeyboardButton('💎 xᴛʀᴀ ғᴛʀs', callback_data='source')
+            ],[      
+            InlineKeyboardButton('🎭 ʜᴇʟᴘ 🎭', callback_data='ftrs'),
+            InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
+            ],[
+            InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='earn')
+        ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1424,12 +1426,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "ftrs":
+        buttons = [[
+            InlineKeyboardButton('∙ ꜰɪʟᴛᴇʀs ∙', callback_data='filters'),
+            InlineKeyboardButton('∙ ꜰɪʟᴇ sᴛᴏʀᴇ ∙', callback_data='store_file')
+        ], [
+            InlineKeyboardButton('∙ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ∙', callback_data='coct'),
+            InlineKeyboardButton('∙ ᴇxᴛʀᴀ ᴍᴏᴅs ∙', callback_data='extra')
+        ], [
+            InlineKeyboardButton('∙ ʀᴜʟᴇs ∙', callback_data='rule_btn'),
+            InlineKeyboardButton('∙ sᴇᴛᴛɪɴɢs ∙', callback_data='setting_btn')
+        ], [
+            InlineKeyboardButton('⇌ ʙᴀᴄᴋ ⇌', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.HELPER_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-        ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('♙ ʜᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1443,9 +1470,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ Usɪɴɢ Bᴏᴛ 💸', callback_data='earn')            
-            ],[                     
+        buttons = [[                    
             InlineKeyboardButton('Tᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),        
             InlineKeyboardButton('Tᴇxᴛ 𝟸 Sᴘᴇᴇᴄʜ', callback_data='ttss'),           
             InlineKeyboardButton("Iᴍᴀɢᴇ", callback_data='image')                                   
@@ -1454,10 +1479,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Fᴏɴᴛ', callback_data='fond'),
             InlineKeyboardButton('Yᴛᴜʙᴇ Dᴏᴡɴ', callback_data='ytdl')
             ],[
-            InlineKeyboardButton('📞 Cᴏɴᴀᴄᴛ Aᴅᴍɪɴ 📱', url='https://t.me/JonSnow11')
-            ],[
-            InlineKeyboardButton('🚫 Cʟᴏsᴇ', callback_data='close_data'),
-            InlineKeyboardButton('Hᴏᴍᴇ 🏠', callback_data='start')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1511,11 +1533,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "earn":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='source')
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ 🔻', url='https://t.me/Request_Corner1')
+        ],[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
             InputMediaPhoto(random.choice(PICS), script.EARN_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,
+        )
+
+     elif query.data == "connectto":
+        buttons = [[
+            InlineKeyboardButton('⇌ ʜᴏᴍᴇ ⇌', callback_data='start'),
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.CONNECTTO_TXT, enums.ParseMode.HTML),
             reply_markup=reply_markup,
         )
     
@@ -1534,6 +1569,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "owner_info":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('✧ ᴄᴏɴᴛᴀᴄᴛ​', url='t.me/JonSnow11')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.OWNER_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
