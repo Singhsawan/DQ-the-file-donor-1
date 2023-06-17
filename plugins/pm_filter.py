@@ -1618,12 +1618,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
      elif query.data == "connectto":
         buttons = [[
-            InlineKeyboardButton('⇌ ʜᴏᴍᴇ ⇌', callback_data='start'),
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra')
         ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.edit_message_media(
-            InputMediaPhoto(random.choice(PICS), script.CONNECTTO_TXT, enums.ParseMode.HTML),
+        await query.message.edit_text(
+            text=script.CONNECTTO_TXT,
             reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
     
     elif query.data == "admin":
