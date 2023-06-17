@@ -1384,7 +1384,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "store_file":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help2')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='ftrs')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1395,7 +1395,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "coct":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help2')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='ftrs')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1406,7 +1406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help2')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='ftrs')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
