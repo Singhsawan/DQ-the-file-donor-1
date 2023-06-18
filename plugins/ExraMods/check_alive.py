@@ -42,7 +42,7 @@ async def tutorial(_, message):
 
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Close", callback_data='close')]
+            [InlineKeyboardButton("Close ‼", callback_data='close_data')]
         ]
     )
     await message.reply_video(video=TUTORIAL_VIDEO, reply_markup=keyboard)        
