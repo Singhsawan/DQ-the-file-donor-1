@@ -24,15 +24,15 @@ async def series(_, message):
 #async def tutorial(_, message):
     #await message.reply_text("Tᴜᴛᴏʀɪᴀʟ Vɪᴅᴇᴏ 👉 https://t.me/tnlinkdown/6 \n\nFᴏʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Tɪᴘs : <code>/ᴍᴏᴠɪᴇs</code>\n\nFᴏʀ Sᴇʀɪᴇs Rᴇǫᴜᴇsᴛ Tɪᴘs : <code>/sᴇʀɪᴇs</code>")
 
-@Client.on_message(filters.command("tutorial", CMD))
-async def tutorial(_, message):
-    await message.reply_video(
-        video=(TUTORIAL_VIDEO),
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("Close", callback_data='close')]
-            ]
-        ),
+#@Client.on_message(filters.command("tutorial", CMD))
+#async def tutorial(_, message):
+    #await message.reply_video(
+        #video=(TUTORIAL_VIDEO),
+        #reply_markup=InlineKeyboardMarkup(
+           # [
+              #  [InlineKeyboardButton("Close", callback_data='close')]
+           # ]
+      #  ),
 
 @Client.on_message(filters.command("tutorial", CMD))
 async def tutorial(_, message):
