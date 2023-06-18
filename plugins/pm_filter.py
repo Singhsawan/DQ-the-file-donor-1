@@ -1548,13 +1548,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[                    
-            InlineKeyboardButton('Tᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),        
-            InlineKeyboardButton('TTS', callback_data='ttss'),           
-            InlineKeyboardButton("Iᴍᴀɢᴇ", callback_data='image')                                   
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),        
+            InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),           
+            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')                                   
             ],[                               
-            InlineKeyboardButton('Cᴀʀʙᴏɴ', callback_data='fond'),
-            InlineKeyboardButton('Fᴏɴᴛ', callback_data='fond'),
-            InlineKeyboardButton('Yᴛᴜʙᴇ Dᴏᴡɴ', callback_data='ytdl')
+            InlineKeyboardButton('ᴛᴏʀʀᴇɴᴛ', callback_data='torrent'),
+            InlineKeyboardButton('ғᴏɴᴛ', callback_data='fond'),
+            InlineKeyboardButton('ʏᴏᴜᴛᴜʙᴇ', callback_data='ytdl')
+            ],[
+            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ', callback_data='sticker'),
+            InlineKeyboardButton('ᴋᴀɴɢ', callback_data='kang'),
+            InlineKeyboardButton('sʜᴀʀᴇ ᴛᴇxᴛ', callback_data='sharetxt')
             ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='start')
         ]]
@@ -1595,6 +1599,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
             InputMediaPhoto(random.choice(PICS), script.TELE_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,
+        )
+
+    elif query.data == "kang":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.KANG_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,
+        )
+
+    elif query.data == "sticker":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.STICKER_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,
+        )
+
+    elif query.data == "sharetxt":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.SHARETXT_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,
+        )
+
+    elif query.data == "torrent":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.TORRENT_TXT, enums.ParseMode.HTML),
             reply_markup=reply_markup,
         )
     
