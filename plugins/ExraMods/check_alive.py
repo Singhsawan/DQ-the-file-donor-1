@@ -20,9 +20,19 @@ async def movie(_, message):
 async def series(_, message):
     await message.reply_text("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n⚠️ SERIES REQUEST TIPS »\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\n❤️ Iғ Yᴏᴜ Wᴀɴᴛ Aɴʏ Sᴇʀɪᴇs, Jᴜsᴛ Tʏᴘᴇ Tʜᴇ Nᴀᴍᴇ ❤️\n\n彡 Exᴀᴍᴘʟᴇs \n› Stranger Things ✔️\n› Request Stranger Things ❌\n› Stranger Things Series ❌\n\n❤️ Iғ Yᴏᴜ Wᴀɴᴛ A Sᴘᴇᴄɪғɪᴄ Sᴇᴀsᴏɴ Oғ Aɴʏ Sᴇʀɪᴇs , Tʏᴘᴇ Lɪᴋᴇ S01, S02 ᴇᴛᴄ... ❤️\n彡 Exᴀᴍᴘʟᴇs \n› Stranger Things S01 ✔️\n› Stranger Things Season 1 ❌\n\n❤️ Iғ Yᴏᴜ Wᴀɴᴛ A Sᴘᴇᴄɪғɪᴄ Episode Oғ Aɴʏ Sᴇʀɪᴇs , Tʏᴘᴇ Lɪᴋᴇ S01E01, S01E02 ᴇᴛᴄ... ❤️\n彡 Exᴀᴍᴘʟᴇs \n› Stranger Things S01E02 ✔️\n› Stranger Things Season 1  Episode 2 ❌")
 
+#@Client.on_message(filters.command("tutorial", CMD))
+#async def tutorial(_, message):
+    #await message.reply_text("Tᴜᴛᴏʀɪᴀʟ Vɪᴅᴇᴏ 👉 https://t.me/tnlinkdown/6 \n\nFᴏʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Tɪᴘs : <code>/ᴍᴏᴠɪᴇs</code>\n\nFᴏʀ Sᴇʀɪᴇs Rᴇǫᴜᴇsᴛ Tɪᴘs : <code>/sᴇʀɪᴇs</code>")
+
 @Client.on_message(filters.command("tutorial", CMD))
 async def tutorial(_, message):
-    await message.reply_text("Tᴜᴛᴏʀɪᴀʟ Vɪᴅᴇᴏ 👉 https://t.me/tnlinkdown/6 \n\nFᴏʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Tɪᴘs : <code>/ᴍᴏᴠɪᴇs</code>\n\nFᴏʀ Sᴇʀɪᴇs Rᴇǫᴜᴇsᴛ Tɪᴘs : <code>/sᴇʀɪᴇs</code>")
+    await message.reply_video(
+        video=(TUTORIAL_VIDEO),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("Close", callback_data='close')]
+            ]
+        ),
 
 @Client.on_message(filters.command("ping", CMD))
 async def ping(_, message):
