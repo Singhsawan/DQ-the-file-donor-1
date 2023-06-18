@@ -6,6 +6,12 @@
   <img src="assets/logo.jpg" alt="Rolex Logo">
 </p>
 
+<p align="center">
+    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
+
+<p align="left"><a href="https://t.me/+ZPpcbtCV204yYWU1"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-ɢʀᴏᴜᴘ-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="right"><a href="https://t.me/RolexMoviesOXO"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-ᴄʜᴀɴɴᴇʟ-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>    
+
 ## Deployments
 
 <details><summary>Dᴇᴘᴏʟʏ Tᴏ Kᴏʏᴇʙ</summary>
