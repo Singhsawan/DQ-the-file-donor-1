@@ -1,4 +1,6 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠+𝗧𝗢+𝗥𝗢𝗟𝗘𝗫𝗧𝗚+𝐁𝐎𝐓!)</p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+![Typing SVG]<p align="center">𝙉𝙤𝙫𝙖 𝙁𝙞𝙡𝙚 𝙎𝙝𝙖𝙧𝙞𝙣𝙜 𝘽𝙤𝙩 🔥 </p>
 
 <p align="center">
   <img src="assets/logo.jpg" alt="Rolex Logo">
