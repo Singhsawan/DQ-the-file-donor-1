@@ -239,12 +239,12 @@ async def next_page(bot, query):
                 ],
             )
     btn.insert(0, [
-        InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
-        InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
+        InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
+        InlineKeyboardButton("✵ Lᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{req}")
     ])
-    btn.insert(0, [
-        InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
-    ])
+    #btn.insert(0, [
+        #InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
+    #])
 
     try:
         await query.edit_message_reply_markup(
@@ -1907,12 +1907,12 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
-        InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
+        InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
+        InlineKeyboardButton("✵ Lᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{req}")
     ])
-    btn.insert(0, [
-        InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
-    ])
+    #btn.insert(0, [
+        #InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
+    #])
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
