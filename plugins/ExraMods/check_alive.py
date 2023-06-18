@@ -34,6 +34,17 @@ async def tutorial(_, message):
             ]
         ),
 
+@Client.on_message(filters.command("tutorial", CMD))
+async def tutorial(_, message):
+    video=(TUTORIAL_VIDEO)
+
+    keyboard = InlineKeyboardMarkup(
+        [
+            [InlineKeyboardButton("Close", callback_data='close')]
+        ]
+    )
+    await message.reply_video(video=TUTORIAL_VIDEO, reply_markup=keyboard)        
+
 @Client.on_message(filters.command("ping", CMD))
 async def ping(_, message):
     start_t = time.time()
