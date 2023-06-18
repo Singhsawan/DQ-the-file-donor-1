@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-![Typing SVG]<p align="center">𝙉𝙤𝙫𝙖 𝙁𝙞𝙡𝙚 𝙎𝙝𝙖𝙧𝙞𝙣𝙜 𝘽𝙤𝙩 🔥 </p>
+<p align="center">𝙓𝙊-𝙉𝙊𝙑𝘼 / 𝙆𝙄𝙉𝙂-𝙎𝙏𝙀𝙑𝙀 🔥 </p>
 
 <p align="center">
   <img src="assets/logo.jpg" alt="Rolex Logo">
