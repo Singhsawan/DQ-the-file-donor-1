@@ -8,7 +8,7 @@
 
 ## Deployments
 
-<details><summary>Dᴇᴘᴏʟʏ Tᴏ Kᴏʏᴇʙ</summary>
+<details><summary><b>Dᴇᴘᴏʟʏ Tᴏ ʜᴇʀᴏᴋᴜ</b></summary>
 <p>
 <br>
 <a href="http://dashboard.heroku.com/new?template=https://github.com/Enox5600/File-Sharing-Bot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a>
