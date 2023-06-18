@@ -1559,13 +1559,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),           
             InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')                                   
             ],[                               
-            InlineKeyboardButton('ᴛᴏʀʀᴇɴᴛ', callback_data='torrent'),
+            InlineKeyboardButton('sʜᴀʀᴇ ᴛᴇxᴛ', callback_data='sharetxt'),
             InlineKeyboardButton('ғᴏɴᴛ', callback_data='fond'),
             InlineKeyboardButton('ʏᴏᴜᴛᴜʙᴇ', callback_data='ytdl')
-            ],[
-            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ', callback_data='sticker'),
-            InlineKeyboardButton('ᴋᴀɴɢ', callback_data='kang'),
-            InlineKeyboardButton('sʜᴀʀᴇ ᴛᴇxᴛ', callback_data='sharetxt')
             ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='start')
         ]]
