@@ -245,8 +245,7 @@ async def next_page(bot, query):
                 ],
             )
     btn.insert(0, [
-        InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
-        InlineKeyboardButton("✵ Lᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{req}")
+        InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
     ])
     #btn.insert(0, [
         #InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
@@ -1957,8 +1956,7 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
-        InlineKeyboardButton("✵ Lᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{req}")
+        InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{message.from_user.id}")
     ])
     #btn.insert(0, [
         #InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
