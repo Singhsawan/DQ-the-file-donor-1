@@ -245,7 +245,8 @@ async def next_page(bot, query):
                 ],
             )
     btn.insert(0, [
-        InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}")
+        InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
+        InlineKeyboardButton("✵ ʟᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{req}")
     ])
     #btn.insert(0, [
         #InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
@@ -357,7 +358,8 @@ async def language_check(bot, query):
             )
         
         btn.insert(0, [
-            InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{userid}")
+            InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
+            InlineKeyboardButton("✵ ʟᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{userid}")
         ])
 
         if offset != "":
@@ -1956,7 +1958,8 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{message.from_user.id}")
+        InlineKeyboardButton("✵ ᴛᴜᴛᴏʀɪᴀʟ ✵", url=DOWNLOAD_TEXT_URL),
+        InlineKeyboardButton("✵ ʟᴀɴɢᴜᴀɢᴇs ✵", callback_data=f"select_lang#{message.from_user.id}")
     ])
     #btn.insert(0, [
         #InlineKeyboardButton("🔻 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔻", url=f"https://t.me/{temp.U_NAME}")
