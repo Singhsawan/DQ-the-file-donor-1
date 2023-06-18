@@ -101,3 +101,6 @@ PM_IMDB = environ.get('PM_IMDB', "True")
 REQ_SUB = bool(environ.get("REQ_SUB", True))
 PMFILTER = environ.get('PMFILTER', "True")
 FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
+HRK_APP_NAME = environ.get('HRK_APP_NAME', 'kallummullum')
+HRK_API = environ.get('HRK_API', 'ac75625f-551a-4abb-8f5e-e7a2321e792c')
+
