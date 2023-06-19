@@ -3,7 +3,7 @@
 <p align="center">𝙓𝙊-𝙉𝙊𝙑𝘼 / 𝙆𝙄𝙉𝙂-𝙎𝙏𝙀𝙑𝙀 🔥 </p>
 
 <p align="center">
-  <img src="assets/logo.jpg" alt="Rolex Logo">
+  <img src="assets/NOvakingsteve.jpg" alt="Nova Logo">
 </p>
 
 <p align="center"><a href="https://t.me/+ZPpcbtCV204yYWU1"><img src="https://img.shields.io/static/v1?label=Profile+views&message=2589&color=007ec6&style=for-the-badge" width="220" height="38.45"></a></p>
