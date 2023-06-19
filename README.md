@@ -6,7 +6,7 @@
   <img src="assets/logo.jpg" alt="Rolex Logo">
 </p>
 
-![](https://komarev.com/ghpvc/?username=ITZ-ZAID&style=flat-square)
+![](https://img.shields.io/static/v1?label=Profile+views&message=2589&color=007ec6&style=for-the-badge)
 
 <p align="center"><a href="https://t.me/+ZPpcbtCV204yYWU1"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-ɢʀᴏᴜᴘ-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 <p align="center"><a href="https://t.me/RolexMoviesOXO"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-ᴄʜᴀɴɴᴇʟ-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
